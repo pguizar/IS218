@@ -27,7 +27,7 @@ if(strlen($question) < 3) {
 if (empty($_POST["qBody"])) {
     $nameErr = "<p class='error'> Question body is required </p> ";
       echo $nameErr ;}
-if(strlen($qBody) > 50) {
+if(strlen($qBody) > 500) {
     echo ("<p class='error'>Question body needs to be less than 500 characters. </p>");
 }else{
     echo ' ';
